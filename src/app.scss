@@ -1,0 +1,39 @@
+:root {
+  --primary-color: #007bff;
+  --primary-color-light: #057fff;
+  --secondary-color: #6c757d;
+  --background-dark-color: #10121a;
+  --background-dark-grey: #191d2b;
+  --border-color: #2e344e;
+  --background-light-color: #f1f1f1;
+  --background-light-color-2: rgba(3, 127, 255, 0.3);
+  --white-color: #fff;
+  --button-color: #1f2235;
+  --font-light-color: #a4acc4;
+  --font-dark-color: #313131;
+  --font-dark-color-2: #151515;
+
+  --sidebar-dark-color: #191d2b;
+  --scrollbar-bg-color: #383838;
+  --scrollbar-thump-color: #6b6b6b;
+  --scrollbar-track-color: #383838;
+  --menu-color: #15023a;
+}
+
+.app {
+  min-height: 100vh;
+
+  .sections {
+    width: 100%;
+    height: calc(100vh - 3rem);
+    background-color: var(--background-dark-grey);
+    position: relative;
+    margin-top: 3rem;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}

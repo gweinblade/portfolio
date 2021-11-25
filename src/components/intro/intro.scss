@@ -1,0 +1,117 @@
+.intro {
+  height: 100%;
+  width: 100%;
+  overflow-y: hidden;
+  position: relative;
+  .lines {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    .line-1,
+    .line-2,
+    .line-3,
+    .line-4 {
+      width: 1px;
+      background-color: var(--border-color);
+      height: 100%;
+    }
+  }
+  .typography {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80%;
+
+    .s {
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      -o-user-select: none;
+      user-select: none;
+    }
+    .icons {
+      display: flex;
+      justify-content: center;
+      margin-top: 1rem;
+      .icon {
+        border: 2px solid var(--border-color);
+        color: var(--white-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        transition: all 0.4s ease-in-out;
+        cursor: pointer;
+        &:hover {
+          border: 2px solid var(--primary-color);
+          color: var(--primary-color);
+        }
+        &:not(:last-child) {
+          margin-right: 1rem;
+        }
+        svg {
+          margin: 0.5rem;
+        }
+      }
+
+      .i-youtube {
+        &:hover {
+          border: 2px solid red;
+          color: red;
+        }
+      }
+      .i-github {
+        &:hover {
+          border: 2px solid #5f4687;
+          color: #5f4687;
+        }
+      }
+    }
+
+    h1 {
+      font-family: "Nunito", sans-serif;
+      font-size: 4rem;
+      color: var(--white-color);
+      span {
+        font-size: 4rem;
+        color: var(--primary-color);
+      }
+    }
+    p {
+      font-family: "Nunito", sans-serif;
+      margin: 0;
+      color: var(--font-light-color);
+      font-size: 1.1rem;
+    }
+
+    h3 {
+      font-size: 2rem;
+      span {
+        color: var(--font-light-color);
+        font-size: inherit;
+      }
+      .ityped-cursor {
+        font-size: 2.2rem;
+        opacity: 1;
+        -webkit-animation: blink 1s infinite;
+        -moz-animation: blink 1s infinite;
+        animation: blink 1s infinite;
+        animation-direction: alternate;
+      }
+
+      @keyframes blink {
+        50% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+    }
+  }
+}

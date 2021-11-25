@@ -1,0 +1,16 @@
+.Lines {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0.2;
+  display: flex;
+  justify-content: space-evenly;
+
+  .line-1,
+  .line-2,
+  .line-3,
+  .line-4 {
+    width: 1px;
+    background-color: var(--border-color);
+  }
+}
