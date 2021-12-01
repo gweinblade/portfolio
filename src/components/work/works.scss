@@ -1,4 +1,15 @@
 .works {
+  background-image: linear-gradient(
+    to bottom right,
+    #1f1d36,
+    #3f3351,
+    #864879,
+    #e9a6a6,
+    #864879,
+    #3f3351,
+    #1f1d36
+  );
+  min-height: 100%;
   div {
     //display: block;
   }
@@ -14,7 +25,6 @@
   align-items: center;
   flex-direction: column;
   //justify-content: center;
-  min-height: fit-content;
 
   .resume-container {
     display: flex;

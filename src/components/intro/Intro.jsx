@@ -5,6 +5,7 @@ import GithubIcon from '@material-ui/icons/GitHub';
 import YoutubeIcon from '@material-ui/icons/YouTube';
 import { useEffect,useRef } from "react"
 import Particle from "../particle/particle";
+import { LinkedIn } from "@material-ui/icons";
 
 export default function Intro() {
     const textref = useRef();
@@ -15,7 +16,7 @@ export default function Intro() {
                 showCursor: true, 
                 backDelay:1500,
                 backSpeed:60,
-                strings: ["Developer", "Designer","Creator" ] })
+                strings: ["fullstack Developer  ", "android Developer "," software Developer","unity 3d Developer" ] })
     }, []);
     return (
         <div className="intro" id="intro" >
@@ -44,14 +45,15 @@ export default function Intro() {
                   </div>
                
                 <div className="icons">
-                    <a href="https://codepen.io/pen/" className="icon i-facebook">
+                    <a href="https://www.facebook.com/mehdi.mokrani.9/" className="icon i-facebook">
                         <FacebookIcon />
                     </a>
-                    <a href="https://codepen.io/pen/" className="icon i-github">
+                    <a href="https://github.com/gweinblade" className="icon i-github">
                         <GithubIcon />
                     </a>
-                    <a href="https://codepen.io/pen/" className="icon i-youtube">
-                        <YoutubeIcon />
+                    <a href="https://www.linkedin.com/in/mehdi-mokrani-692295219/" className="icon i-youtube">
+                        
+                        <LinkedIn/>
                     </a>
                 </div>
                 
