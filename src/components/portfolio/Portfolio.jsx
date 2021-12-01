@@ -28,7 +28,10 @@ export default function Portfolio() {
             id : "Mobile App",
             title : "Mobile App"
         },
-        //{id : "2d Games",title : "2d Games"}
+        {
+            id : "2d Games",
+            title : "2d Games"
+        }
         
     ]
 
