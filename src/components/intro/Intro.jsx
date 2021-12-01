@@ -36,7 +36,7 @@ export default function Intro() {
 
               <div className="typography">
                   <div className="s">
-                  <h1>Hi, I'm <span>Mokrani mehdi</span></h1>
+                  <h1>Hi, I'm <span>MOKRANI MEHDI</span></h1>
                 <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Atque nihil voluptates ea dolore vel 
