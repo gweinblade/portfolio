@@ -77,7 +77,7 @@ import Particle2 from "../particle/particle2";
     return (
         <div className="contact" id="contact" >
             
-            
+            <Particle2/>
             
            
           <ToastContainer/>
@@ -129,7 +129,7 @@ import Particle2 from "../particle/particle2";
                     
                 </div>
                 </div>
-                <Particle2/>
+                
                 
         </div>
     )

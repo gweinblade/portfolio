@@ -86,7 +86,7 @@ export default function Portfolio() {
       
                             </div>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dictum non massa porttitor finibus. Aliquam pulvinar ligula arcu. Ut sed placerat dolor,Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dictum non massa porttitor finibus. Aliquam pulvinar ligula arcu. Ut sed placerat dolor.
+                               {d.text}
                             </p>
                             
                                 <i class="fab fa-github " onClick={()=> window.open(d.link)}> link to the project's github repository</i>

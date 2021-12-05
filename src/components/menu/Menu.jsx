@@ -17,6 +17,7 @@ export default function Menu({menuOpen,setMenuOpen}) {
                 <li className="nav-item" onClick={()=>setMenuOpen(false)}>
                     <NavLink to="/contact" activeClassName="active">Contact</NavLink>
                 </li>
+                
             </ul>
             
         </div>

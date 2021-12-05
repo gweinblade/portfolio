@@ -10,6 +10,7 @@ import {Route,Routes}  from "react-router-dom";
 import Menu from "./components/menu/Menu";
 
 
+
 function App() {
   const [menuOpen,setMenuOpen] = useState(false)
   return (
@@ -20,18 +21,20 @@ function App() {
       
       
           <Routes>
-            <Route path="/" element={<Intro/>}>
+            <Route path="/" element={<Intro/>}/>
               
-            </Route>
-            <Route path="/portfolio" element={ <Portfolio/>}>
+            
+            <Route path="/portfolio" element={ <Portfolio/>}/>
              
-            </Route>           
-            <Route path="/works" element={<Works/>}>
+                    
+            <Route path="/works" element={<Works/>}/>
               
-            </Route>
-            <Route path="/contact" element={ <Contact/>}>
+            
+            <Route path="/contact" element={ <Contact/>} />
+
+            
              
-            </Route>
+            
           </Routes>
        
       </div>

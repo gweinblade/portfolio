@@ -38,9 +38,7 @@ export default function Intro() {
                   <div className="s">
                   <h1>Hi, I'm <span>MOKRANI MEHDI</span></h1>
                 <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Atque nihil voluptates ea dolore vel 
-                    repellat? Quia tenetur non quam exercitationem. Lorem ipsum dolor sit amet.</p>
+                </p>
                 <h3> <span ref={textref}></span></h3>
                   </div>
                

@@ -19,6 +19,7 @@ export default function Particle2() {
       //loaded={particlesLoaded}
       options={{
         autoPlay: true,
+        zIndex:0,
         backgroundMask: {
           composite: "destination-out",
           cover: {

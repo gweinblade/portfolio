@@ -4,7 +4,6 @@
     #1f1d36,
     #3f3351,
     #864879,
-    #e9a6a6,
     #864879,
     #3f3351,
     #1f1d36
@@ -37,8 +36,8 @@
 
   .resume-card {
     display: flex;
-    height: 360px;
-    width: 1000px;
+    height: 30rem;
+    width: 80rem;
     /* margin: 80px 0; */
   }
 
@@ -87,14 +86,15 @@
     align-items: center;
     cursor: pointer;
     //background: linear-gradient(100deg, #1f2235 10%, white 100%);
-    background-color: linear-gradient(100deg, #1f2235 10%, white 100%);
-
+    background-image: linear-gradient(100deg, #1f2235 20%, white 80%);
+    font-weight: bold;
+    color: var(--white-color);
     height: 40px;
     margin: 15px 0;
     padding: 0 8px;
     border-radius: 20px;
     width: 100%;
-    transition: width 0.6s ease;
+    transition: width 2s ease;
   }
 
   .bullet-label {
@@ -119,16 +119,17 @@
 
   .selected-bullet {
     color: white;
-    background-color: #1f2235;
+    background-image: linear-gradient(100deg, #1f2235 100%, white 0%);
     width: 100%;
-    transition: all 0.5s ease;
+
+    transition: all 2s ease;
   }
 
   .resume-screen-container {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 360px;
+    height: 30rem;
     width: 100%;
   }
 
@@ -174,13 +175,16 @@
   .resume-sub-heading {
     font-size: 14px;
     font-family: "Poppins SemiBold";
-    color: black;
+    color: var(--white-color);
     margin: 10px 0 0 0;
   }
 
   .resume-heading-description {
-    font-size: 12px;
+    font-size: 0.8rem;
     text-align: justify;
+    margin: 0.2rem;
+    color: var(--white-color);
+    font-weight: 300;
   }
 
   .heading-date {
@@ -224,7 +228,8 @@
   .skill-parent span {
     font-family: "Poppins Bold";
     font-size: 16px;
-    color: #ff5823;
+    color: var(--white-color);
+    font-weight: bold;
   }
 
   /* IPAD PRO RESPONSIVENESS */
@@ -263,7 +268,7 @@
     }
 
     .resume-bullet-details {
-      height: 360px;
+      height: 30rem;
       padding: 0;
       width: fit-content;
     }

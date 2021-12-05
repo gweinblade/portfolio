@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState , useEffect, useRef} from "react";
 import Heading from "../heading/Heading";
 import "./works.scss"
 
@@ -144,12 +144,16 @@ export default function Works() {
           />
         </div>,
       ];
-    
+      const [height, setHeight] = useState(0);
+      const elementRef = useRef(0);
+      useEffect(() => {
+        setHeight(elementRef.current.clientHeight);
+      }, []);
       const handleCarousal = (index) => {
-        let offsetHeight = 360;
+        let offsetHeight = 30;
     
         let newCarousalOffset = {
-          style: { transform: "translateY(" + index * offsetHeight * -1 + "px)" },
+          style: { transform: "translateY(" + index * offsetHeight * -1 + "rem)" },
         };
     
         setCarousalOffsetStyle(newCarousalOffset);
