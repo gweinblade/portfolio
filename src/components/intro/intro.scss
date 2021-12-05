@@ -114,4 +114,22 @@
       }
     }
   }
+
+  .link {
+    button {
+      border: 1px solid var(--font-light-color);
+      border-radius: 20px;
+      cursor: pointer;
+      margin: 1rem 0 0 0;
+      font-size: 1rem;
+      padding: 0.6rem;
+      font-family: "Nunito", sans-serif;
+      color: var(--white-color);
+      background-color: var(--primary-color);
+      &:hover {
+        color: var(--background-dark-color);
+        background-color: var(--white-color);
+      }
+    }
+  }
 }

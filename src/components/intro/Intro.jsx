@@ -7,6 +7,7 @@ import { useEffect,useRef } from "react"
 import Particle from "../particle/particle";
 import { LinkedIn } from "@material-ui/icons";
 
+
 export default function Intro() {
     const textref = useRef();
     
@@ -21,11 +22,11 @@ export default function Intro() {
     return (
         <div className="intro" id="intro" >
              <div className="lines">
-            <div className="line-1"></div>
-            <div className="line-2"></div>
-            <div className="line-3"></div>
-            <div className="line-4"></div>
-          </div>
+                <div className="line-1"></div>
+                <div className="line-2"></div>
+                <div className="line-3"></div>
+                <div className="line-4"></div>
+            </div>
             
             
             <Particle/>
@@ -54,6 +55,15 @@ export default function Intro() {
                         <LinkedIn/>
                     </a>
                 </div>
+                
+                    
+                <a className="link" href="assets/cv.pdf" download="cv">
+                    <button >
+                        Get Resume
+                    </button>
+                        
+                </a>
+                
                 
             </div>
             
