@@ -49,9 +49,19 @@
 
   .resume-bullet-details {
     flex-grow: 1;
+    border-radius: 5%;
     width: 600px;
     overflow: hidden;
     padding: 0 0 0 80px;
+    background-image: linear-gradient(
+      to bottom,
+      #1f1d36,
+      #3f3351,
+      #864879,
+      #864879,
+      #3f3351,
+      #1f1d36
+    );
   }
 
   .experience-description {
