@@ -57,7 +57,7 @@ export default function Intro() {
                 </div>
                 
                     
-                <a className="link" href="assets/cv.pdf" download="cv">
+                <a className="link" href="assets/cv2.pdf" download="cv">
                     <button >
                         Get Resume
                     </button>
