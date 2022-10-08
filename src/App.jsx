@@ -2,11 +2,11 @@ import Contact from "./components/contact/Contact";
 import Intro from "./components/intro/Intro";
 import Portfolio from "./components/portfolio/Portfolio";
 import Topbar from "./components/topbar/Topbar";
-import Works from "./components/work/Works";
+import About from "./components/work/About";
 import "./app.scss"
 import { useState } from "react";
 import {Route,Routes}  from "react-router-dom";
-
+import { AnimatePresence } from "framer-motion";
 import Menu from "./components/menu/Menu";
 
 
@@ -19,7 +19,7 @@ function App() {
       <Menu  menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
       <div className="sections"> 
       
-      
+          <AnimatePresence>
           <Routes>
             <Route path="/" element={<Intro/>}/>
               
@@ -27,7 +27,7 @@ function App() {
             <Route path="/portfolio" element={ <Portfolio/>}/>
              
                     
-            <Route path="/works" element={<Works/>}/>
+            <Route path="/about" element={<About/>}/>
               
             
             <Route path="/contact" element={ <Contact/>} />
@@ -36,10 +36,10 @@ function App() {
              
             
           </Routes>
-       
-      </div>
+          </AnimatePresence>
+  </div>
     
-      
+    
     </div>
   );
 }

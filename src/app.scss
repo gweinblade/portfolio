@@ -22,11 +22,18 @@
 
 .app {
   min-height: 100vh;
+  
 
   .sections {
     width: 100%;
     height: calc(100vh - 3rem);
-    background-color: var(--background-dark-grey);
+    background-image: linear-gradient(
+      to bottom left,
+      #1f1d36,
+      #3f3351,
+      #864879,
+      #e9a6a6
+    );
     position: relative;
     margin-top: 3rem;
     scroll-behavior: smooth;
@@ -34,6 +41,11 @@
     scrollbar-width: none;
     &::-webkit-scrollbar {
       display: none;
+    }
+    > *{
+        width: 100%;
+        height: calc(100vh - 3rem);
+        scroll-snap-align: start;
     }
   }
 }

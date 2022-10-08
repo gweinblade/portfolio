@@ -2,11 +2,10 @@ import "./intro.scss"
 import { init } from 'ityped'
 import FacebookIcon from '@material-ui/icons/Facebook';
 import GithubIcon from '@material-ui/icons/GitHub';
-import YoutubeIcon from '@material-ui/icons/YouTube';
 import { useEffect,useRef } from "react"
-import Particle from "../particle/particle";
 import { LinkedIn } from "@material-ui/icons";
-
+import { motion } from 'framer-motion';
+import { transition,animationOne } from "../Animation/animation";
 
 export default function Intro() {
     const textref = useRef();
@@ -20,20 +19,21 @@ export default function Intro() {
                 strings: ["fullstack Developer  ", "android Developer "," software Developer","unity 3d Developer" ] })
     }, []);
     return (
-        <div className="intro" id="intro" >
-             <div className="lines">
-                <div className="line-1"></div>
-                <div className="line-2"></div>
-                <div className="line-3"></div>
-                <div className="line-4"></div>
-            </div>
-            
-            
-            <Particle/>
-            
-       
+        <motion.div 
+        className="intro" 
+        id="intro"
+        initial='out'
+        animate='in'
+        exit='out'
+        variants={animationOne}
+        transition={transition}
+        >
+        
+             
+             <div className="profil" >
+             <img src="assets/profil.png" alt=""  />
+                </div>
                 
-
 
               <div className="typography">
                   <div className="s">
@@ -63,11 +63,13 @@ export default function Intro() {
                     </button>
                         
                 </a>
-                
+               
                 
             </div>
             
            
-        </div>
+        
+        
+        </motion.div>
     )
 }

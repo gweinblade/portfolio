@@ -1,10 +1,12 @@
 import { useState , useEffect, useRef} from "react";
+import { transition,animationtwo } from "../Animation/animation";
+import { motion } from 'framer-motion';
 import Heading from "../heading/Heading";
-import "./works.scss"
+import "./about.scss"
 
 //import { useState } from "react";
 
-export default function Works() {
+export default function About() {
     
     //const [count, setCount] = useState(0);
     const [selectedBulletIndex, setSelectedBulletIndex] = useState(0);
@@ -150,10 +152,10 @@ export default function Works() {
         setHeight(elementRef.current.clientHeight);
       }, []);
       const handleCarousal = (index) => {
-        let offsetHeight = 30;
-    
+        let offsetHeight = height;
+        console.log(offsetHeight);
         let newCarousalOffset = {
-          style: { transform: "translateY(" + index * offsetHeight * -1 + "rem)" },
+          style: { transform: "translateY(" + index * offsetHeight * -1 + "px)" },
         };
     
         setCarousalOffsetStyle(newCarousalOffset);
@@ -163,6 +165,7 @@ export default function Works() {
       const getBullets = () => {
         return resumeBullets.map((bullet, index) => (
           <div
+         
             onClick={() => handleCarousal(index)}
             className={
               index === selectedBulletIndex ? "bullet selected-bullet" : "bullet"
@@ -195,24 +198,35 @@ export default function Works() {
       
     
       return (
-        <div className="works" id="works">
+        <motion.div 
+        className="about" 
+        id="about"
+        initial='out'
+        animate='in'
+        exit='out'
+        variants={animationtwo}
+        transition={transition}
+        >
+        <div >
            
-           <Heading title={'Resume'} sub={'My formal Bio Details '}/>
+           <Heading title={'About me'} sub={'My formal Bio Details '}/>
             <div className="resume-content">
               
               
               <div className="resume-card">
                 <div className="resume-bullets">
                   <div className="bullet-container">
+                    
+                    <div className="bullets">
                     <div className="bullet-icons"></div>
-                    <div className="bullets">{getBullets()}</div>
+                    {getBullets()}</div>
                   </div>
                 </div>
       
-                <div className="resume-bullet-details">{getResumeScreens()}</div>
+                <div  ref={elementRef} className="resume-bullet-details">{getResumeScreens()}</div>
               </div>
             </div>
           </div>
-       
+          </motion.div>
       )
     }
